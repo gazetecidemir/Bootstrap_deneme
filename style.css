@@ -1,0 +1,178 @@
+/* Sayfa arkaplan rengi ve navbar için padding */
+body {
+    background-color: #fafafa;
+    padding-top: 54px;
+}
+
+/* Navbar sabitleme ve stil */
+.navbar {
+    background-color: white;
+    height: 54px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Logo için margin */
+.logo {
+    margin-left: 192px;
+}
+
+/* Arama çubuğu ortala ve margin */
+.form-inline.my-2.my-lg-0 {
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Placeholder arkaplan resmi */
+::placeholder {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    background-image: url(assets/search-solid.svg); /* Kendi resminizi ekleyin */
+    background-repeat: no-repeat;
+    background-position: 40%;
+    background-position-x: 25%;
+}
+
+/* Menü margin */
+.navbar-nav {
+    margin-left: 5px;
+    margin-top: 2px;
+}
+
+/* Küçük ekranlarda menü gizle */
+@media (max-width: 576px) {
+    .navbar-nav .d-none.d-sm-block {
+        display: none !important;
+    }
+}
+
+/* Orta alan */
+.middlearea {
+    margin-top: 2rem;
+}
+
+/* İçerik kolonu responsive */
+.col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Hikayeler yatay kaydırma */
+.card-body {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* Hikaye resimleri ve metin */
+.storyphoto {
+    display: block;
+    margin: 0 auto;
+}
+
+.storytext {
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Üç nokta sağda */
+.fa-ellipsis-h {
+    float: right;
+    margin-right: 10px;
+}
+
+/* Buton border kaldır */
+.list-group.list-group-horizontal {
+    border: none !important;
+}
+
+/* Bookmark offset */
+.nav-item.ml-4 {
+    margin-left: 7rem !important;
+}
+
+/* Kart renkleri */
+.card-header, .card-footer {
+    background-color: white !important;
+}
+
+/* Yorum paylaş sağa */
+.card-footer span:last-child {
+    float: right;
+}
+
+/* Sağ panel */
+.rightpanel {
+    background-color: white;
+    border: none !important;
+}
+
+/* Sticky sidebar */
+#sticky-sidebar {
+    position: sticky;
+    top: 74px;
+    height: calc(100vh - 74px);
+    overflow-y: auto;
+}
+
+/* Tümünü gör ve Takip et sağa */
+.postuserfont[style*="font-size: 12px"] {
+    float: right;
+}
+
+.postuserfont[style*="font-size: 13px; color: #0095f6"] {
+    float: right;
+    margin-right: 15px;
+}
+
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    background-color: #FAFAFA;
+}
+
+.postuserfont {
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+
+.storyphoto {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgb(238, 39, 82);
+  margin-right: 7px;
+}
+
+.storytext {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 12px;
+  color: black;
+}
+
+.rightpanellinks {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.rightpanellinks:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
